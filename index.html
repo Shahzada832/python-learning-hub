@@ -401,8 +401,228 @@ initial-scale=1.0">
 
            <h3>📄 Rules for Naming Variables</h3>
            <p>
-               We can choose names for our variables, but Python has some rules that we must follow
+               We can choose names for our variables, but Python has some rules that we must follow.
            </p>
+           <p><strong>Here are the main rules:</strong></p>
+
+           <ol>
+               <li>
+                   A variable name must start with a letter or an underscore(_)
+               </li>
+               <li>
+                   A variable name cannot start with a number.
+               </li>
+               <li>
+                   Variable names cannot contain spaces.
+               </li>
+               <li>
+                   Variable names can contain letters, numbers, and underscores.
+               </li>
+               <li>
+                   Python treats uppercase and lowercase letters as different characters.
+               </li>
+               <li>
+                   You cannot use Python's reserved keywords as variable names.
+               </li>
+           </ol>
+           <h3>✔️ Valid Variable Names</h3>
+           <div class="code">
+               name = "Shahzada"<br>
+               age = 17<br>
+               favorite_subject = "Math"<br>
+               student1 = "Sarah"<br>
+               _score = 95
+           </div>
+           <h3>✖️ Invalid Variable Names</h3>
+           <div="code">
+               1name = "Shahzada"<br>
+               favorite subject = "Math"<br>
+               my-age = 17
+           </div>
+
+           <p>Why are these incorrect?</p>
+
+           <ul>
+               <li>
+                   <code>1name</code> starts with a number.
+               </li>
+               <li>
+               <code>favorite subject</code> contains a space.
+               </li>
+                <li>
+                    <code>my-age</code> contains a hyphen.
+                </li>
+           </ul>
+
+           <div class="tip">
+               ⭐ <strong>Programming Tip:</strong>
+               Use descriptive names such as <code>student_name</code>
+               or <code>total_score</code>
+               They make your code easier to understand.
+           </div>
+           <h3>🔢 Uppercase and Lowercase Matter!</h3>
+           <p>
+               Python is case-sensitive.
+               This means that uppercase and lowercase letters are treated differently.
+           </p>
+           <div class="code">
+               name = "Shahzada"<br>
+               Name = "Sarah"<br><br>
+               print(name)<br>
+               print(Name)
+           </div>
+           <div class="output">
+               💻 <strong>Output:</strong><br>
+               Shahzada<br>
+               Sarah
+           </div>
+
+           <p>
+               Even though the variable names look similar, Python considers them two different variables.
+           </p>
+
+           <!-- SECTION 4 -->
+           <h3>🧩 What are Data Types?</h3>
+           <p>
+               Variables can store different kinds of inforamation.
+               These categories are called <strong>data types</strong>.
+           </p>
+           <p>
+               For example, a person's name is a text, their age is a whole number, and their height may contain a decimal number.
+           </p>
+
+           <p>
+               Python has several built-in data types. In this lesson, we will explore three important ones.
+           </p>
+           
+           <!-- INTEGER -->
+           <h3>🔢 Integer</h3>
+           <p>
+              An integer is a whole number without a decimal point.
+           </p>
+           <p>Integers can be:</p>
+           <ul>
+               <li>Positive: 10, 25, 100</li>
+               <li>Negative: -5, -20, -100</li>
+               <li>Zero: 0</li>
+           </ul>
+           <h4>Example 1: Storing an Age</h4>
+           <div class ="code">
+               age = 17<br>
+               print(age)
+           </div>
+
+           <div class="output">
+               💻 <strong>Output:</strong><br>
+               17
+           </div>
+           <h4>Example 2: Performing Calculations</h4>
+           <div class="code">
+               books = 15<br>
+               new_books = 15<br><br>
+               total = books + new_books<br><br>
+               print(total)
+           </div>
+           <div class="output">
+               🖥️ <strong>Output:</strong><br>
+               20
+           </div>
+
+           <p>
+               Integers are especially useful for counting objects and performing calculations with whole numbers.
+           </p>
+
+           <!-- FLOAT -->
+           <h3>📏 Float(float)</h3>
+
+           <p>
+               A float is a number that contains a decimal point.
+           </p>
+           <p>Examples of float include:</p>
+           <ul>
+               <li>3.14</li>
+               <li>2.5</li>
+               <li>17.8</li>
+               <li>-4.5</li>
+           </ul>
+           <h4>Example 1: Storing a Decimal Number</h4>
+           <div class="code">
+               price = 12.50<br>
+               print(price)
+           </div>
+
+           <div class="output">
+               💻 <strong>Output:</strong>
+               12.5
+           </div>
+
+           <p>
+               Python displays 12.5 because the final zero after the decimal point is unnecessary. 
+           </p>
+
+           <h4>Example 2: Calculating an Average</h4>
+           <div class="code">
+               score1 = 85<br>
+               score2 = 90<br>
+               score3 = 95<br><br>
+               average = (score1 + score2 + score3)/3<br><br>
+               print(average)
+           </div>
+
+           <div class="output">
+               💻 <strong>Output:</strong>
+               90
+           </div>
+
+           <p>
+               Division with the / operator produces a float in Python, even when the result is a whole number.
+           </p>
+           <!-- BOOLEAN -->
+
+           <h3>✔️ Boolean(bool)</h3>
+           <p>
+               A Boolean is a data type that has only two possible values:
+               <code>True</code> and <code>False</code>
+           </p>
+           <p>
+               Booleans help Python represent whether something is true or false.
+           </p>
+           <h4>Example 1</h4>
+           <div class="code">
+               is_student = True<br>
+               print(is_student)
+           </div>
+
+           <div class="output">
+               💻 <strong>Output:</strong><br>
+                   True
+           </div>
+           <div class ="code">
+               is_summer = False<br>
+               print(is_summer)
+           </div>
+
+           <div class="output">
+               💻 <strong>Output:</strong><br>
+               False
+           </div>
+
+           <div class="tip">
+               ⚠️ <strong>Important:</strong>
+               Python requires the first letters of True and False to be uppercase.
+               <code>true</code> and <code>false</code>
+               are not valid Boolean values in Python.
+           </div>
+           
+           
+              
+           
+               
+           
+               
+         
+           
+           
 
 
 
